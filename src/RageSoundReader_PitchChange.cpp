@@ -86,6 +86,7 @@ bool RageSoundReader_PitchChange::SetProperty( const RString &sProperty, float f
 	if( sProperty == "Speed" )
 	{
 		SetSpeedRatio( fValue );
+		SetPitchRatio( fValue );  // Always change pitch when changing rate
 		return true;
 	}
 
